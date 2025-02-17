@@ -1,0 +1,136 @@
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #dbffed; /* Main page background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack header and main section */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto; /* Allow scrolling if content exceeds height */
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Ensure main takes available space */
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Add some space from the top */
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #fe8e84;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Question section styles */
+section.question {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ace1af; /* Question background color */
+    border: 2px solid #80aed7; /* Border color and medium width */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section.question h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Image styles inside question section */
+section.question img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+/* Option styles */
+.options {
+    width: 100%;
+}
+
+.options label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #80aed7; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ccc4e0; /* Hover color */
+}
+
+/* Timer and feedback styles */
+#timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fe8e84;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#result {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #80aed7;
+    margin-top: 30px;
+}
+
+/* Centering next button */
+#navigation {
+    width: 100%;
+    text-align: center;
+}
+
